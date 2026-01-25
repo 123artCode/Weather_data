@@ -24,11 +24,11 @@ try:
 	latitude = float(latitude)
 	print(f"latitude: {latitude}")
 except:
+	latitude = 45
 	print("Latitude must be a number without any character.")
-	latitude = 45
 if not -90 <= latitude <= 90:
-	print("Latitude must be between -90 and 90 degrees.")
 	latitude = 45
+	print("Latitude must be between -90 and 90 degrees.")
 
 
 longitude = input("Enter longitude(in °E): ")
@@ -43,11 +43,11 @@ try:
 	longitude = float(longitude)
 	print(f"longitude: {longitude}")
 except:
+	longitude = 45
 	print("Longitude must be a number without any character.")
-	longitude = 45
 if not -180 <= longitude <= 180:
-	print("Longitude must be between -180 and 180 degrees.")
 	longitude = 45
+	print("Longitude must be between -180 and 180 degrees.")
 
 
 
